@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Numbers Game</title>
+    <link rel="icon" type="image/x-icon" href="./recourses/img/TAB name.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="content">
+            <div id="big-name">
+                <h1>Numbers Game</h1>
+            </div>
+            <div id="body">
+                <p>
+                    Pick a number which is four digits or more and does not have consecutive zeros <br><br>
+                    Now add every digits to each other <br><br>
+                    Subtract the result from the initial number you choose <br><br>                   
+                    Delete one number which is not a zero and enter the rest in the box below
+                </p>
+            </div>
+        </div>
+        <form>
+            <div id="input">
+                <input type="number" id="numberInput" placeholder="Enter the remaining number here">
+            </div>
+            <div id="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="resultBanner">
+            <div><p>The Number you deleted is: </p></div>
+            <div id="result"><span id="resultValue" style="color: white;"></span></div>
+        </div>
+        <script src="./recourses/index.js"></script>
+    </main>
+</body>
+</html>
